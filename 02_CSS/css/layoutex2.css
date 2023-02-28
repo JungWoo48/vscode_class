@@ -1,0 +1,43 @@
+
+.header {
+    height: 10vh;
+}
+.navi {
+    height: 5vh;
+}
+.top {
+    border: 1px solid red;
+    display: flex;
+    padding: 20px;
+}
+
+.top div {
+    border: 1px solid blue;
+    height: 20vh;
+    width: 50%;
+}
+.footer {
+    height: 10vh;
+}
+
+section {
+    display: flex;
+}
+
+.left-bottom {
+    padding: 10px;
+    width:50%
+}
+
+.left-bottom div {
+    height: 10vh;
+    border: 1px solid aqua;
+}
+
+.right-bottom {
+    width: 50%;
+}
+
+.figure {
+    padding: 10px;
+}

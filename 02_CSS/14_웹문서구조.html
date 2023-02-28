@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/structure.css">
+    <script src="https://kit.fontawesome.com/8597ca188d.js" crossorigin="anonymous"></script>
+
+    <title>14_웹문서구조</title>
+</head>
+<body>
+    <!-- 전체 컨테이너-->
+    <div class="container">
+
+        <!--헤더-->
+        <div class="header">
+            <!--로고영역(클릭시 메인페이지)-->
+            <div>
+                <a href="#">
+                    <img src="./src/logo1.png" id="home-logo" width="150px;">
+                </a>
+            </div>
+
+        <div>
+            <!-- 검색창 -->
+            <div class="search-area">
+
+                <!-- form 내부 input 태그밧을 서버 또는 페이지로 전달-->
+                <form action="#" name="search-form">
+
+                    <!-- fieldset : form 내부에서 input을 종류별로 묶는용도로 자주사용-->
+                    <fieldset>
+                        <!-- autocomplete=off : html 기본 자동완성 사용X-->
+                        <input type="search" id="query" name="query"
+                            autocomplete="off" placeholder="검색어 입력">
+
+                        <!--검색버튼-->
+                        <button id="search-btn" class="fa-solid fa-magnifying-glass"></button>
+                    </fieldset>
+
+                </form>
+
+            </div>
+        </div>
+
+            <!-- 공백영역-->
+            <div></div>
+        </div>
+        <!--헤더끝-->
+
+        <!--네비바-->
+        <div class="nav">
+            <ul>
+                <li><a href="#">공지사항</a></li>
+                <li><a href="#">자유게시판</a></li>
+                <li><a href="#">질문 게시판</a></li>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">1대1 문의</a></li>
+            </ul>
+        </div>
+        <!--네비바끝-->
+
+        <!--content영역-->
+        <div class="content">
+            <!-- 콘텐트 내용 영역-->
+            <div class="content-1"></div>
+
+            <!--로그인 영역-->
+            <div class="content-2"></div>
+                <form action="#" name="login-form">
+
+                    <fieldset id="id-pw-area">
+
+                        <div>
+                            <input type="text" name="inpuId" placeholder="아이디">
+                            <input type="password" name="inputPw" placeholder="비빌번호">
+                        </div>
+
+                        <div>
+                            <!-- button 기본값은 submit-->
+                            <button>로그인</button>
+                        </div>
+
+                    </fieldset>
+
+                    <!--회원가입, ID/PW 찾기 영역-->
+                    <div id="signup-find-area">
+                        <a>회원가입</a>
+                        <span>|</span>
+                        <a>ID/PW 찾기</a>
+                    </div>
+
+                </form>
+            </div>
+        <!--content 끝-->
+
+    </div>
+    <!--전체 컨테이너끝-->
+
+    <!-- footer 영역-->
+    <div class="footer">
+        <p>Copyright &copy; international market</p>
+
+        <div>
+            <a href="#">프로젝트 소개</a>
+            <span>|</span>
+            <a href="#">이용약관</a>
+            <span>|</span>
+            <a href="#">개인정보처리방침</a>
+            <span>|</span>
+            <a href="#">고객센터</a>       
+        </div>
+    </div>
+    <!--footer 끝-->
+
+    
+</body>
+</html>

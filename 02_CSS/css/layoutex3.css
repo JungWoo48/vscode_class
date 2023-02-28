@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    display:flex;
+    height: 1000px;
+    border:1px solid black;
+}
+
+
+.left {
+    background-color: gray;
+    height: 1000px;
+
+    border:1px solid black;
+    flex-basis: 10%;
+
+}
+
+.header {
+    background-color: gray;
+    height: 10vh;
+    display:flex;
+
+    width: 130vh;
+    border:1px solid black;
+}
+
+.navi {
+    background-color: gray;
+    height: 10vh;
+    display:flex;
+    border:1px solid black;
+
+}
+
+.main {
+    background-color: orange;
+    height:83vh;
+
+    display:flex;
+    border:1px solid black;
+    
+}
+
+.sec1 {
+    background-color:  red;
+    height:50vh;
+    width: 50vh;
+    padding: 10px;
+
+    justify-content: center;
+    align-items: center;
+    display:flex;
+
+    margin: 10px;
+    border:1px solid black;
+
+}
+
+.in1 > div {
+    background-color:  yellow;
+    margin: 10px;
+
+    width:20vh;
+    height:20vh;
+    border:1px solid black;
+}
+
+.in2 > div {
+    background-color:  yellow;
+    width:20vh;
+    height:20vh;
+    margin: 10px;
+    border:1px solid black;
+}
+
+.particle1 {
+    background-color: blue;
+    width: 70vh;
+    height:20vh;
+    align-items: center;
+    margin: 10px;
+    margin-top: 20px;
+    border:1px solid black;
+}
+
+
+.particle2 {
+    background-color: olive;
+    width: 70vh;
+    height:20vh;
+    margin: 10px;
+    margin-top: 20px;
+    border:1px solid black;
+}
+
+
+
+

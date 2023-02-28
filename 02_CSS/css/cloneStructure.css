@@ -1,0 +1,133 @@
+* {
+    box-sizing: border-box;   
+}
+
+
+
+
+body {
+    margin: 0;
+    /* body가 가지고있는 기본 마진제거*/
+}
+
+#home-logo {
+    width: 50px;
+}
+
+.header > div {
+    
+    display: flex;
+}
+
+.search-area{
+    display: flex;
+    
+}
+
+.search-area > ul {
+    list-style: none;
+}
+
+.search-area a {
+    text-decoration: none;
+    
+}
+
+
+
+.nav-1 {
+
+    justify-content: center;
+    align-items: center;
+    margin-top: 13px;
+}
+
+.nav-container {
+    display: flex;
+}
+
+.nav-2 >ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav2 a:hover {
+    color: blue;
+}
+
+.nav-2 > ul > li {
+    margin-left: 20px;
+}
+
+.footer2  {
+    display: flex
+}
+
+
+
+.git >div {
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+.footer1-1 {
+    display:flex;
+}
+
+.footer1-1 > div >ul{
+    list-style: none;
+    margin-top: 10px;
+
+}
+
+.ft-1 {
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#sub-button {
+    background-color: white;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-left: 20px;
+    height: 40px;
+    width: 100px;
+    margin-bottom: 30px;
+}
+
+.footer1-1 a {
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+
+}
+
+.footer1-1 a:hover {
+    color:blue;
+    text-decoration: underline;
+    
+}
+
+.icons > a{
+   
+}
+
+
+.footer2 a {
+    text-decoration: none;
+    color:black;
+}
+
+.footer2 a:hover {
+    color:blue;
+    text-decoration: underline;
+}
+
+.void {
+    width: 70px;
+}

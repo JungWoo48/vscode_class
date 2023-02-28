@@ -1,0 +1,67 @@
+@import url(https://fonts.google.com/noto/specimen/Noto+Sans+KR);
+@import url(https://fonts.google.com/noto/specimen/Noto+Serif+KR?query=korean);
+
+#size-test > li:nth-child(1) {font-size: 24px;}
+#size-test > li:nth-child(2) {font-size: 18pt;}
+#size-test > li:nth-child(3) {font-size: 150%;}
+#size-test > li:nth-child(4) {font-size: 1.5em;}
+
+/*크롬 브라우저 기준
+기본 글꼴 크기 : 16px*/
+
+/* fomt-weight*/
+#weight-test > li {
+    font-size:34px;
+}
+
+#weight-test > li:nth-child(1) {font-weight: 600;}
+#weight-test > li:nth-child(2) {font-weight: bold;}
+#weight-test > li:nth-child(3) {font-weight: bolder;}
+#weight-test > li:nth-child(4) {font-weight: lighter;}
+#weight-test > li:nth-child(5) {
+    font-weight: normal;
+    font-style: italic;
+}
+
+/* font-famliy*/
+
+.cls > li {
+    font-size: 24px;
+}
+
+#family-test1 > li:nth-child(1) {
+    font-family: '궁서';
+}
+
+#family-test1 > li:nth-child(2) {
+    font-family: '배달의민족체';
+    /*없는 폰트의 경우 기본폰트*/
+}
+
+#family-test1 > li:nth-child(3) {
+    font-family: '배달의민족체' ,'굴림체';
+}
+
+/*웹 폰트*/
+/* link 태그를 이용한 방법*/
+
+#family-test2 > li:nth-child(1) {
+    font-family: 'single Day', cursive;
+}
+
+/*import는 css 파일 최상단에*/
+#family-test2 > li:nth-child(2) {
+    font-family: 'Noto Serif KR', serif;
+}
+
+@font-face {
+    font-family: 'SaenggeoJincheon';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2212@1.0/SaenggeoJincheon.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*font-face 이용하기*/
+#family-test2 > li:nth-child(3) {
+    font-family: 'SaenggeoJincheon';
+}

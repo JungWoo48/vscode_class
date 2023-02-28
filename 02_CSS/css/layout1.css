@@ -1,0 +1,126 @@
+.area1{ background-color: red;}
+.area2{ background-color: orange;}
+.area3{ background-color: yellow;}
+.area4{ background-color: green;}
+.area5{ background-color: blue;}
+
+.block { 
+    border: 1px solid black;
+    width: 150px;
+    height: 150px;
+    color: white;
+
+    display: block;
+    /*요소 형식을 block으로 변경*/
+}
+
+.inline {
+    display: inline;
+    /*요소 형식을 inline으로 변경*/
+}
+
+.inline-block {
+    display:inline-block;
+    /*요소 형식을 inline-block으로 변경*/
+}
+
+.none {
+    display: none;
+}
+
+/*감싸는 영역 요소*/
+#container-1 {
+    border: 1px solid black;
+    width: 330px;
+    height: 400px;
+}
+
+/* 내부에 영역을 분할할 요소*/
+.div-1 {
+    /*
+    고정 크기 단위 -> 감싸는 영역의 크기가 변하면 다시 계산이 힘들다
+    width: 300px;
+    height: 200px;*/
+
+    /*가변 크기 단위(%)
+    -> 화면이나 감싸는 역역의 크기에 비례해서 크기가 자동 계산
+    */
+
+    width: 100%;
+    height: 50%
+    /*감싸는 영역의 크기가 바뀌어도 맞춰서 가변시켜준다*/
+
+}
+
+#container-1 > .div-1:first-of-type {
+    background-color: red;
+    height: 30%; /*각 클래스에서 덮어쓰기 가능*/
+}
+
+#container-1 > .div-1:last-of-type {
+    background-color: blue;
+    height: 70%
+}
+
+/*3분할*/
+
+#container-2 {
+    border: 1px solid black;
+    width: 400px;
+    height: 300px;
+}
+/*블럭 형식은 별도로 width 지정하지 않아도 된다*/
+
+
+#container-2 > .div-2:nth-of-type(1) {
+    background-color: aqua;
+    height: 20%;
+}
+
+#container-2 > .div-2:nth-of-type(2) {
+    background-color: darkcyan;
+    height: 30%;
+}
+
+#container-2 > .div-2:nth-of-type(3) {
+    background-color: indigo;
+    height: 50%;
+}
+
+/* 좌우 2분할*/
+#container-3 {
+    border: 5px solid red;
+    width: 400px;
+    height: 200px;
+}
+
+.div-3 {
+    width: 50%;
+    height: 100%;
+
+    display: inline-block;
+}
+
+#container-3 > .div-3:first-child {
+    background-color: blueviolet;
+}
+
+#container-3 > .div-3:last-child {
+    background-color: darkgoldenrod;
+}
+
+/*dispaly: none / visibility : hidden;*/
+
+.div-4 {
+    border: 3px solid black;
+    height: 100px;
+}
+
+#test4 {
+    background-color:  darkmagenta;
+
+    /*visibility:hidden 은 요소가 투명한 색으로 바뀜*/
+
+    /*display: none은 요소가 아예 보이지 않음(영역도 차지 하지 않는다*/
+}
+

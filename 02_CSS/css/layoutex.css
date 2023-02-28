@@ -1,0 +1,39 @@
+div{
+    margin: 4px;
+}
+
+.header {
+    height: 100px;
+    background-color: rgb(243, 243, 243);
+}
+
+.navi {
+    height:50px;
+    background-color: rgb(243, 243, 243);
+}
+
+.content {
+    display: flex;
+    height: 200px;
+    
+}
+
+.left-content {
+    flex-basis: 15%;
+    background-color: rgb(243, 243, 243);
+}
+
+.main-content {
+    flex-basis: 70%;
+    background-color: rgb(243, 243, 243);
+}
+
+.right-content {
+    flex-basis: 15%;
+    background-color: rgb(243, 243, 243);
+}
+
+.footer {
+    height: 60px;
+    background-color: rgb(243, 243, 243);
+}

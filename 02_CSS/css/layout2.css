@@ -1,0 +1,127 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+}
+
+/* content 영역*/
+.content {
+    width: 150px;
+    height: 150px;
+
+    /*
+    width/height 속성은
+    기본적으로 content 영역의 크기를 지정하는 속성
+    */
+}
+
+/* border 영역*/
+.border {
+    border: 10px solid aquamarine
+}
+
+/* padding 영역*/
+.padding {
+    padding: 30px;
+    /* 내용과 테두리 사이 간격을 상하좌우 30px 벌림*/
+}
+
+/* margin 영역*/
+.margin {
+    margin: 50px;
+    /* 타 요쇼와의 간격을 50px 만큼 벌림*/
+}
+
+/* 서로 다른 요소의 margin이 겹칠 경우
+    더 큰 margin을 가진 요소의 값을 따른다*/
+#m1 {
+    margin: 100px
+}
+
+/****************************************************************************/
+
+/* 방향성*/
+
+.padding-test {
+    /*
+    padding-top: 40px;
+    padding-bottom: 50px;
+    padding-left: 30px;
+    padding-right: 50px;*/
+
+    /*padding  속성 :
+    작성법에 따라서 paddiung 특정 방향에 크기를 지정할 수 있음;
+    */
+
+    /* 값 1개 : 상하좌우 padding: 30px;*/
+    /* 값 2개 : 상하, 좌우 padding: 30px 50px*/
+    /* 값 1개 : 상, 좌우, 하 padding: 40px 30px 20px*/
+    /* 값 1개 : 상,우,하,좌 padding: 40px 30px 20px 10px*/
+    padding: 40px 30px 20px 10px
+
+}
+
+.border-test {
+    /* border 속성은 상하좌우 별도 지정 불가능*/
+
+    border: 4px solid red;
+
+    /*테두리의 두께만은 별도 가능 상우하좌순*/
+    border-width: 20px 10px 5px 2px;
+
+    border-top: 1px solid black;
+    border-bottom: 5px solid violet;
+    border-left: 10px solid blue;
+    border-right: 12px solid green;
+}
+
+/*margin test*/
+.margin-test {
+    margin : 100px;
+    margin-top: 200px;
+    
+}
+
+/*margin-auto test*/
+.margin-auto {
+    /*margin-top: 100px;*/
+
+    /*좌우 요소간의 간격을 자동으로 지정하여 가운데 정렬*/
+    margin: auto;
+
+    /* margin 속성이 상하좌우 동시 지정 속성이라 auto 적용시 top을 덮어씌움
+    auto는 top의 기본값이 0
+    
+    top값도 바꾸고 싶다면 auto 이후에 top을 작성하여 덮어씌운다*/
+    margin-top: 100px;
+}
+
+#box-sizing {
+    /* 테두리 10px, padding 20px, 나머지 내용
+        전체 요소 크기가 가로.세로 300px 정사각형 만들기
+    */
+
+    padding: 20px;
+    border: 10px solid black;
+    /*
+    padding border의 크기를 감안하여 content 크기를 계산해야 함
+    width: 240px;
+    height: 240px;
+    -> box sizing으로 해결 가능
+    */
+    width:300px;
+    height:300px;
+
+    box-sizing: border-box;
+
+    /*
+        content-box (기본값)
+        - width / height 속성 지정시 content 영역만 적용
+
+        border-box
+        - width / height 속성 지정시
+        content + padding + border의 크기를 합산한 결과가
+        지정한 속성값과 같게 자동으로 비율 계산하여 적용
+    */
+
+}
